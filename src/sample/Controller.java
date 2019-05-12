@@ -84,6 +84,12 @@ public class Controller {
             try{
                 TextFieldOutput1.setText(InfixtoPostfix.infixToPostfix(exp1));
 
+                InfixToPostfixAlgo i = new InfixToPostfixAlgo();
+                String output =i.infixToPostfixConversation(exp1);
+                System.out.println(output);
+
+
+
             } catch (RuntimeException ex) {
                 TextFieldOutput1.setText("niepoprawne wyrazenie w Input Infix");
             }
